@@ -13,11 +13,16 @@
 	url('fonts/lato/Lato-Bold.ttf') format('truetype'),
 }
 html, body, main, p, a {
+  -webkit-font-smoothing: antialiased;
 	font-family: 'Lato' !important;
 }
 html, body {
   font-size: 100%;
 }
+body {
+  overflow-y: scroll;
+}
+
 ul, p {
 	-webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
@@ -68,9 +73,43 @@ header nav ul li img {
 	padding: 0;
 }
 
-a {
+header nav ul li a {
 	color: #EDD7A5;
 	text-decoration: none;
+  transition: 0.5s;
+}
+header nav ul li a:link {
+	color: RGB(223,39,39);
+  transition: 0.5s;
+}
+header nav ul li a::visited {
+	color: #EDD7A5;
+  transition: 0.5s;
+}
+
+header nav ul li a:hover {
+	color: #EDD7A5;
+  transition: 0.5s;
+}
+
+p.navText {
+  color: #EDD7A5;
+  width: 80%;
+	float: left;
+	margin: 15% 5% 2% 10%;
+	color: #EDD7A5;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* ========================== FOOTER settings =========
+================================================*/
+.footer {
+	width: 90%;
+	float: left;
+	margin: 45% 5% 2% 10%;
+	color: #EDD7A5;
+	/*outline: 1px solid blue;*/
 }
 
 /* ========================== SUB NAV settings =========
@@ -142,7 +181,7 @@ section.Slider h2 {
     a.slidesjs-previous,
     a.slidesjs-play,
     a.slidesjs-stop {
-      background-image: url(img/btns-next-prev.png);
+      background-image: url("img/btns-next-prev.png");
       background-repeat: no-repeat;
       display:block;
       width:12px;
@@ -151,7 +190,7 @@ section.Slider h2 {
       text-indent: -9999px;
       float: left;
       margin-right:5px;
-      z-index: 10;
+      z-index: 100000;
     }
 
     a.slidesjs-next {
@@ -205,7 +244,7 @@ section.Slider h2 {
       width: 13px;
       height: 0;
       padding-top: 13px;
-      background-image: url(img/pagination.png);
+      background-image: url("img/pagination.png");
       background-position: 0 0;
       float: left;
       overflow: hidden;
@@ -233,9 +272,17 @@ section.Slider h2 {
     .navbar {
       overflow: hidden
     }
+    #slidesjs-slide {
+      display: none;
+    }
 
 /* ========================== ABOUT US settings =========
-==========================================================*/
+=====================================================
+=====*/
+.about {
+        margin-top: -200px;
+      padding-top: -200px;
+}
 .About img {
 	display: inline-block;
 	max-width: 400px;
@@ -258,17 +305,6 @@ section.Slider h2 {
 }
 
 
-
-
-/* ========================== FOOTER settings =========
-================================================*/
-.footer {
-	width: 100%;
-	float: left;
-	margin: 100% 5% 2% 5%;
-	color: #EDD7A5;
-	/*outline: 1px solid blue;*/
-}
 
 
 /* ========================== CAR MODEL PAGE settings =========
@@ -417,3 +453,7 @@ div.tab-content {
 .paymentIcons img {
   display: inline;
 }
+
+
+
+

@@ -1,10 +1,4 @@
 /* ================= font set ============== */
-@font-face{
-	font-family: 'Lato' !important;
-	src: 
-	url('fonts/lato/web fonts/Lato-Regular.ttf') format('truetype'),
-	url('fonts/lato/web fonts/Lato-Bold.ttf') format('truetype'),
-}
 @font-face {
   font-family: 'Lato' !important;
   font-style: normal;
@@ -12,15 +6,23 @@
   src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+@font-face{
+	font-family: 'Lato' !important;
+	src: 
+	url('fonts/lato/Lato-Regular.ttf') format('truetype'),
+	url('fonts/lato/Lato-Bold.ttf') format('truetype'),
+}
+html, body, main, p, a {
+	font-family: 'Lato' !important;
+}
 html, body {
-	font-size: 100%;
-	font-family: 'Lato' sans-serif !important;
+  font-size: 100%;
 }
 ul, p {
 	-webkit-margin-before: 0px;
-    -webkit-margin-after: 0px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
 	-webkit-padding-start: 0px;
 }
 body {
@@ -71,14 +73,46 @@ a {
 	text-decoration: none;
 }
 
+/* ========================== SUB NAV settings =========
+==========================================================*/
+#subNav {
+	position: fixed;
+	width: 80%;
+	margin-left: 20%;
+	top: 0;
+	right: 0;
+	padding: 20px 0 20px 0;
+	background-color: #DF2727;
+	z-index: 100;
+}
+#subNav ul {
+	list-style: none;
+	text-align: right;
+	/*outline: 1px solid white;*/
+}
+#subNav ul > li {
+	display: inline-block;
+	margin: 0 15px 0 15px;
+}
+#subNav ul > li > a {
+  color: #EDD7A5;
+}
+/* -----------       shopping cart       -----------  */
+#subNav ul li:last-child {
+  padding-right: 15px;
+}
+
 /* ========================== container settings =========
 ==========================================================*/
 main {
 	width: 80%;
 	float: left;
 	margin: 60px 0 0 20%;
-	color: RGB(30,30,30);
+	color: RGB(40,40,40);
 	/*outline: 1px solid black;*/
+}
+main a {
+  color: RGB(40,40,40);
 }
 
 /* ========================== SLIDER SECTION settings =========
@@ -117,6 +151,7 @@ section.Slider h2 {
       text-indent: -9999px;
       float: left;
       margin-right:5px;
+      z-index: 10;
     }
 
     a.slidesjs-next {
@@ -222,31 +257,8 @@ section.Slider h2 {
 	text-align:  center;
 }
 
-/* ========================== SUB NAV settings =========
-==========================================================*/
-#subNav {
-	position: fixed;
-	width: 80%;
-	margin-left: 20%;
-	top: 0;
-	right: 0;
-	padding: 20px 0 20px 0;
-	background-color: #DF2727;
-	z-index: 100;
-}
 
-#subNav ul {
-	list-style: none;
-	text-align: right;
-	/*outline: 1px solid white;*/
-}
-#subNav ul > li {
-	display: inline-block;
-	margin: 0 15px 0 15px;
-}
-#subNav ul > li > a {
-	padding-right: 15px;
-}
+
 
 /* ========================== FOOTER settings =========
 ================================================*/
@@ -256,4 +268,152 @@ section.Slider h2 {
 	margin: 100% 5% 2% 5%;
 	color: #EDD7A5;
 	/*outline: 1px solid blue;*/
+}
+
+
+/* ========================== CAR MODEL PAGE settings =========
+================================================*/
+article {
+  margin: 60px 5% 30px 5%;
+}
+
+/*sssssssssssssssssss < start of Photo box > sssssssssssssssssss*/
+section.productPhoto {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;}
+
+section.productPhoto img {
+    width: 100%;}
+
+/*sssssssssssssssssss < end of Photo box > sssssssssssssssssss*/
+
+
+/*sssssssssssssssssss < start of Right side box > sssssssssssssssssss*/
+section.rightSideContainer {
+    display: inline-block;
+    vertical-align: top;
+    width: 42%;
+
+    margin-left: 8%;
+
+    text-align: left;}
+
+/**************** Product headers ****************/
+section.rightSideContainer h4 {
+    font-weight: 200;
+    font-size: 1.5rem;
+
+    margin:0;
+    -webkit-margin-before:0;
+    -webkit-margin-after: 0;}
+
+section.rightSideContainer h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    margin:0;
+    -webkit-margin-before:0;
+    -webkit-margin-after: 0;}
+
+section.rightSideContainer h3{
+    font-weight: 200;
+    font-size: 2rem;}
+
+/*<><><><><><><><><> < CHOOSE SIZE and QUANTITY > <><><><><><><><><><>*/
+div.SizeQuantity {
+    margin-bottom: 2rem;
+    text-align: left;}
+
+div.chooseSize {
+    display: inline-block;
+    width: 50%;
+    min-width: 2rem;}
+
+div.chooseSize form select {
+    width:100%;
+    height: 40px;
+    padding: 2px;
+    background: transparent;
+    border: 1px solid RGB(223,39,39);
+}
+div.chooseSize form select:link {
+  border: 1px solid white !important;
+}
+div.chooseSize form select::visited{
+  border: 1px solid white !important;
+}
+div.chooseSize form select:hover {
+  border: 1px solid white !important;
+}
+div.chooseSize form select:active {
+  border: 1px solid white !important;
+}
+div.chooseSize form select::focus {
+  border: 1px solid white !important;
+}
+
+div.chooseQuantity {
+    display: inline-block;
+    width: 20%;
+    min-width: 1rem;
+
+    margin-left: 1rem;}
+
+div.chooseQuantity form select {
+    width:100%;
+    min-width: 100px;
+    height: 40px;
+    padding: 2px;
+    background: transparent;
+    border: 1px solid RGB(223,39,39)}
+
+div.chooseQuantity form select:hover {
+  border: 1px solid white !important;
+}
+
+button.AddToBag {
+    width: 50%;
+    height: 40px;
+    min-width: 10rem;
+    padding: 3px;
+
+    background-color: transparent;
+    border: 1px solid RGB(223,39,39);
+
+    font-weight: 900;
+    color: RGB(40,40,40);
+    transition: 0.5s;
+}
+button.AddToBag:hover {
+  border: 1px solid white;
+}
+
+button.AddToBag i {
+    color: RGB(40,40,40);
+    margin-left: 15px;}
+
+/*<><><><><><><><><> < end of CHOOSE SIZE and QUANTITY > <><><><><><><><><><>*/
+/*sssssssssssssssssss < end of Right side box > sssssssssssssssssss*/
+
+/* ================================== TABS =========================== */
+div.tab-content {
+  border-top: 1px solid RGB(223,39,39) !important;
+}
+
+.nav-tabs li.active {
+  border-top: 1px solid RGB(223,39,39);
+  border-left: 1px solid RGB(223,39,39);
+  border-right: 1px solid RGB(223,39,39);
+}
+.nav-tabs li.active a.tabsss {
+  background-color: transparent;
+}
+.nav-tabs li a.tabsss {
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+/* ============== Payment icons ============== */
+.paymentIcons img {
+  display: inline;
 }

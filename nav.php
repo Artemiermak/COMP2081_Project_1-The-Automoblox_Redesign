@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html class="no-js" lang="en">
 	<!--
-		Web site: 			http://artemwebdev.azurewebsites.net/
+		Web site: 			http://automoblox-artem.azurewebsites.net/
 		Author: 			Artem Iermak
 	-->
 	<head>
@@ -48,31 +48,31 @@
             <nav id="mainNav">
                 <ul>
                     <li>    <!-- logo section -->
-                        <a href="index.html"> 
+                        <a href="index.php"> 
                             <img src="img/automoblox_logo.png" alt="automoblox logo"> 
                         </a>
                     </li> <!-- end of logo section -->
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li>
                         <span class="beforeLiNav"></span>
-                        <a href="a9model.html">A9 model</a>
+                        <a href="a9model.php">A9 model</a>
                     </li>
                     <li>
                         <span class="beforeLiNav"></span>
-                        <a href="c9model.html">C9 model</a>
+                        <a href="c9model.php">C9 model</a>
                     </li>
                     <li>
                         <span class="beforeLiNav"></span>
-                        <a href="m9model.html">M9 model</a>
+                        <a href="m9model.php">M9 model</a>
                     </li>
                     <li>
                         <span class="beforeLiNav"></span>
-                        <a href="s9model.html">S9 model</a>
+                        <a href="s9model.php">S9 model</a>
                     </li>
                     <li>
                         <span class="beforeLiNav"></span>
-                        <a href="t9model.html">T9 model</a>
+                        <a href="t9model.php">T9 model</a>
                     </li>
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
@@ -87,11 +87,11 @@
             <!-- ============ SUB NAV ============ -->
             <nav id="subNav">
                 <ul>
-                    <li><a href="a9model.html">A9 model</a></li>
-                    <li><a href="c9model.html">C9 model</a></li>
-                    <li><a href="m9model.html">M9 model</a></li>
-                    <li><a href="s9model.html">S9 model</a></li>
-                    <li><a href="t9model.html">T9 model</a></li>
+                    <li><a href="a9model.php">A9 model</a></li>
+                    <li><a href="c9model.php">C9 model</a></li>
+                    <li><a href="m9model.php">M9 model</a></li>
+                    <li><a href="s9model.php">S9 model</a></li>
+                    <li><a href="t9model.php">T9 model</a></li>
                     <li>
                         <a href="#">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>

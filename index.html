@@ -18,6 +18,9 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 
+        <!-- Bootstrap -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
         <!-- ================= CUSTOM CSS STYLES-->
         <link rel="stylesheet" href="css/style.css">
 
@@ -61,6 +64,10 @@
                         <span class="beforeLiNav"></span>
                         <a href="s9model.html">S9 model</a>
                     </li>
+                    <li>
+                        <span class="beforeLiNav"></span>
+                        <a href="t9model.html">T9 model</a>
+                    </li>
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
                 <div class="footer">
@@ -78,6 +85,7 @@
                     <li><a href="c9model.html">C9 model</a></li>
                     <li><a href="m9model.html">M9 model</a></li>
                     <li><a href="s9model.html">S9 model</a></li>
+                    <li><a href="t9model.html">T9 model</a></li>
                     <li>
                         <a href="#">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -86,17 +94,24 @@
                 </ul>
 		    </nav>
             <!-- ============ end of SUB NAV ============ -->
-            <section class="SludgeLeft">
-                <h2 id="header">Choose your model.</h2>
 
 
+            <section class="SludgeLeft container Slider">
+                <h2 id="header">Choose your Automoblox model.</h2>
+                <div id="slides">
+                    <a href="a9model.html"><img src="img/a9_large.png" alt="A9 model photo" /></a>
+                    <a href="c9model.html"><img src="img/c9_large.png" alt="C9 model photo" /></a>
+                    <a href="m9model.html"><img src="img/m9_large.png" alt="M9 model photo" /></a>
+                    <a href="s9model.html"><img src="img/s9_large.png" alt="S9 model photo" /></a>
+                    <a href="t9model.html"><img src="img/t9_large.png" alt="T9 model photo" /></a>
+                </div>
             </section>
 
             <section class="SludgeLeft About">
                 <h2>About us</h2>
-                <img src="http://www.notcot.com/images/autoblox-thumb.jpg" alt="Autoblox photo">
-                <p>Automoblox is a brand name of a wooden car construction toy designed by Patrick Calello and produced by Automoblox Company, LLC of Roseland, New Jersey.</p>
-                <p> The toy consists of wooden car body sections with patented plastic interconnects, polycarbonate wheels and rubber tires, plastic passengers and polycarbonate screens. Each car can be disassembled into its component parts and re-assembled, parts from different cars can be combined to allow children to design their own models. They have also been noted for their extensive use in the PLTW program.</p>
+                <img src="img/autoblox-thumb.jpg" alt="Autoblox photo">
+                <p>Automoblox is a brand name of a wooden car construction toy designed by Patrick Calello and produced by Automoblox Company, LLC of Roseland, New Jersey.<br><br>
+                 The toy consists of wooden car body sections with patented plastic interconnects, polycarbonate wheels and rubber tires, plastic passengers and polycarbonate screens. Each car can be disassembled into its component parts and re-assembled, parts from different cars can be combined to allow children to design their own models. They have also been noted for their extensive use in the PLTW program.</p>
             </section>
         </main>
 
@@ -104,13 +119,39 @@
 <!-- ================== Jquery =============== -->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
 <!-- ================== Boilerplate stuff =============== -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <!-- ================== custom JS =============== -->
         <script src="js/custom.js"></script>
+        
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!-- ================== SLIDES JS =============== -->
+        <script src="js/Slides-SlidesJS-3/source/jquery.slides.min.js"></script>
+
+        <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+        <script>
+            $(function() {
+            $('#slides').slidesjs({
+                width: 940,
+                height: 528,
+                play: {
+                active: true,
+                auto: true,
+                interval: 5000,
+                swap: true
+                }
+            });
+            });
+        </script>
+        <!-- End SlidesJS Required -->
+
+            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

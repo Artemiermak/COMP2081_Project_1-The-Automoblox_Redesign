@@ -1,0 +1,40 @@
+================================ PALETTE
+========================================
+logo:
+HEARTS
+    DF2727
+    HEX
+    223,39,39
+    RGB
+
+Palette: cocoa bar II
+- cocoa   ----------- >  background (1)
+    762416
+    HEX
+    118,36,22
+    RGB
+- cocoa rust
+    B23F00
+    HEX
+    178,63,0
+    RGB
+- cocoa pink
+    A01D3F
+    HEX
+    160,29,63
+    RGB
+- HEARTS
+    DF2727
+    HEX
+    223,39,39
+    RGB
+- cocoa biege
+    EDD7A5
+    HEX
+    237,215,165
+    RGB
+
+
+============================ FONTS
+==================================
+

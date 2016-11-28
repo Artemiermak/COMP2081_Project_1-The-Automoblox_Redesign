@@ -1,0 +1,114 @@
+/* ================= font set ============== */
+@font-face{
+	font-family: 'Lato';
+	src: 
+	url('fonts/lato/web fonts/Lato-Regular.ttf') format('truetype'),
+	url('fonts/lato/web fonts/Lato-Bold.ttf') format('truetype'),
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+html {
+	font-size: 100%;
+}
+/* ========================== GENERAL CLASSES =========
+================================================*/
+.SludgeLeft {
+	padding: 0 15px;
+	outline: 1 solid white;
+}
+
+
+/* ========================== MAIN NAV =========
+================================================*/
+body {
+	margin: 0;
+	padding: 0;
+	outline: 1px solid green;
+	background-color: #EDD7A5;
+}
+main {
+	color: RGB(30,30,30);
+}
+nav {
+	width:20%;
+	float: left;
+	background-color: #762416;
+	outline: 1px solid red;
+}
+
+header nav > ul {
+	list-style: none;
+
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+	
+}
+header nav ul li {
+	outline: 1px solid white;
+	padding-left: 10%;
+}
+
+header nav ul li img {
+	width: 80%;
+	margin: 0 10% 15% 0;
+	padding: 0;
+}
+
+a {
+	color: #EDD7A5;
+	text-decoration: none;
+}
+
+/* ========================== container settings =========
+==========================================================*/
+main {
+	width: 80%;
+	float: left;
+	margin: 50px 0;
+	outline: 1px solid black;
+}
+
+/* ========================== ABOUT US settings =========
+==========================================================*/
+.About {
+
+}
+
+
+/* ========================== SUB NAV settings =========
+==========================================================*/
+#subNav {
+	position: fixed;
+	width: 80%;
+	top: 0;
+	right: 0;
+	background-color: #DF2727;
+	z-index: 100;
+}
+
+#subNav ul {
+	list-style: none;
+	text-align: right;
+	/*outline: 1px solid white;*/
+}
+#subNav ul > li {
+	display: inline-block;
+	margin: 0 15px 0 15px;
+
+}
+
+/* ========================== FOOTER settings =========
+================================================*/
+.footer {
+	width: 100%;
+	float: left;
+	outline: 1px solid blue;
+}

@@ -1,17 +1,17 @@
 				<!-- Nav tabs -->
 				  <ul class="nav nav-tabs" role="tablist">
 					<li role="presentation" class="active">
-						<a class="tabsss" id="1" href="#Description" aria-controls="Subheading" role="tab" data-toggle="tab">Description</a>
+						<a class="tabsss" id="1" href="#Description" role="tab" data-toggle="tab">Description</a>
 					<li>
 					  
 						
 					<li role="presentation">
-						<a class="tabsss" id="2" href="#PaymentOptions" aria-controls="AnotherSubheading" role="tab" data-toggle="tab">Payment options</a>
+						<a class="tabsss" id="2" href="#PaymentOptions" role="tab" data-toggle="tab">Payment options</a>
 					</li>
 					  
 					  
 					<li role="presentation">
-						<a class="tabsss" id="3" href="#AndAnother" aria-controls="AndAnother" role="tab" data-toggle="tab">Shipping</a>
+						<a class="tabsss" id="3" href="#AndAnother"  role="tab" data-toggle="tab">Shipping</a>
 					</li>
 				 </ul>
 			

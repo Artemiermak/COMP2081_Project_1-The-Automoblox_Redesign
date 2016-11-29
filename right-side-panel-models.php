@@ -29,8 +29,6 @@
                     </div> <!-- end of div.chooseQuantity-->
                 </div> <!-- end of div.SizeQuantity-->
 
-                <a href="#" title="Buy">
-                    <button class="AddToBag capitalLetters hoverBlue">add to bag
+                    <button class="AddToBag">add to bag
                         <i  class="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
                     </button>
-                </a>

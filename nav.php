@@ -82,9 +82,9 @@
                     e-mail: someemail@gmail.com
                 </p>
                 <div class="footer">
-                    <small>
+                    
                         <p>Copyright 2016 ©. Artem Iermak. All rights reserved.</p>
-                    </small>
+                    
                 </div>
             </nav> <!-- end of main navigation -->
         </header>

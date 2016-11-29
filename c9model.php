@@ -9,9 +9,9 @@ ob_flush();
 <!-- ============ end of SUB NAV ============ -->
 
 <article>
-	<section class="productPhoto">
+	<div class="productPhoto">
 		<img src="img/c9_large.png" alt="A9 model photo">
-	</section>
+	</div>
 
 	<section class="rightSideContainer">
 

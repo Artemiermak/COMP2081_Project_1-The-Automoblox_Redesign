@@ -115,6 +115,9 @@ p.navText {
 	color: #EDD7A5;
 	/*outline: 1px solid blue;*/
 }
+.footer p {
+  font-size: 0.7rem;
+}
 
 /* ========================== SUB NAV settings =========
 ==========================================================*/
@@ -153,7 +156,7 @@ p.navText {
 /* ========================== container settings =========
 ==========================================================*/
 main {
-	width: 70%;
+	width: 80%;
 	float: left;
 	margin: 60px 0 0 20%;
   padding:0 5% 0 5%;
@@ -342,12 +345,12 @@ article {
 }
 
 /*sssssssssssssssssss < start of Photo box > sssssssssssssssssss*/
-section.productPhoto {
+div.productPhoto {
     display: inline-block;
     vertical-align: top;
     width: 45%;}
 
-section.productPhoto img {
+div.productPhoto img {
     width: 100%;}
 
 /*sssssssssssssssssss < end of Photo box > sssssssssssssssssss*/
@@ -450,6 +453,7 @@ button.AddToBag {
 }
 button.AddToBag:hover {
   border: 1px solid white;
+  cursor: pointer;
 }
 
 button.AddToBag i {

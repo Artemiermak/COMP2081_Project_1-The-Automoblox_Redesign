@@ -8,7 +8,7 @@ ob_flush();
 ?>
 <!-- ============ end of SUB NAV ============ -->
 
-            <section class="SludgeLeft container Slider">
+            <section class="SludgeLeft Slider">
                 <h2 id="header">Choose your Automoblox model.</h2>
                 <div id="slides">
                     <a href="a9model.php"><img src="img/a9_large.png" alt="A9 model photo" /></a>

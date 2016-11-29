@@ -1,7 +1,7 @@
 <?php ob_start();
 
-$page_title = 'a9 model page. COMP2081. Project 1. Automoblox. Artem Iermak';
-$a_class_active_a9 = 'class="is-active"';
+$page_title = 's9 model page. COMP2081. Project 1. Automoblox. Artem Iermak';
+$a_class_active_s9 = 'class="is-active"';
 require('nav.php');
 
 ob_flush();
@@ -10,16 +10,16 @@ ob_flush();
 
 <article>
 	<section class="productPhoto">
-		<img src="img/a9_large.png" alt="A9 model photo">
+		<img src="img/s9_large.png" alt="A9 model photo">
 	</section>
 
 	<section class="rightSideContainer">
 
                 <!--*************** Product headers ***************-->
-                <h4 class="capitalLetters">a9 model</h4>
+                <h4 class="capitalLetters">s9 model</h4>
                 <h2 class="capitalLetters">Mini concept, maxi fun.</h2>
 
-                <h3 class="capitalLetters">$15</h3>
+                <h3 class="capitalLetters">$19</h3>
                 <!--*************** end of Product headers ***************-->
 
                 <!--<><><><><><><><><> < CHOOSE SIZE and QUANTITY > <><><><><><><><><><>-->

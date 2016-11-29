@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	<html class="no-js" lang="en">
+	<html  lang="en">
 	<!--
 		Web site: 			http://automoblox-artem.azurewebsites.net/
 		Author: 			Artem Iermak
@@ -48,34 +48,39 @@
             <nav id="mainNav">
                 <ul>
                     <li>    <!-- logo section -->
-                        <a href="index.php"> 
+                        <a href="index.php" > 
                             <img src="img/automoblox_logo.png" alt="automoblox logo"> 
                         </a>
                     </li> <!-- end of logo section -->
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="index.php" <?php echo $a_class_active_home; ?> >Home</a></li>
                     <li>
                         <span class="beforeLiNav"></span>
-                        <a href="a9model.php">A9 model</a>
+                        <a href="a9model.php" <?php echo $a_class_active_a9; ?> >- A9 model</a>
                     </li>
                     <li>
                         <span class="beforeLiNav"></span>
-                        <a href="c9model.php">C9 model</a>
+                        <a href="c9model.php" <?php echo $a_class_active_c9; ?> >- C9 model</a>
                     </li>
                     <li>
                         <span class="beforeLiNav"></span>
-                        <a href="m9model.php">M9 model</a>
+                        <a href="m9model.php" <?php echo $a_class_active_m9; ?> >- M9 model</a>
                     </li>
                     <li>
                         <span class="beforeLiNav"></span>
-                        <a href="s9model.php">S9 model</a>
+                        <a href="s9model.php" <?php echo $a_class_active_s9; ?> >- S9 model</a>
                     </li>
                     <li>
                         <span class="beforeLiNav"></span>
-                        <a href="t9model.php">T9 model</a>
+                        <a href="t9model.php" <?php echo $a_class_active_t9; ?> >- T9 model</a>
                     </li>
-                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
+                <p class="navText">
+                    Thanks for comming to our web site. We hope you will find the best toy you want! In case of questions, call or text us please!
+                    <br>
+                    #+1-123-45-78-90
+                    <br>
+                    e-mail: someemail@gmail.com
+                </p>
                 <div class="footer">
                     <small>
                         <p>Copyright 2016 ©. Artem Iermak. All rights reserved.</p>
@@ -87,11 +92,11 @@
             <!-- ============ SUB NAV ============ -->
             <nav id="subNav">
                 <ul>
-                    <li><a href="a9model.php">A9 model</a></li>
-                    <li><a href="c9model.php">C9 model</a></li>
-                    <li><a href="m9model.php">M9 model</a></li>
-                    <li><a href="s9model.php">S9 model</a></li>
-                    <li><a href="t9model.php">T9 model</a></li>
+                    <li><a href="a9model.php" <?php echo $a_class_active_a9; ?> >A9 model</a></li>
+                    <li><a href="c9model.php" <?php echo $a_class_active_c9; ?> >C9 model</a></li>
+                    <li><a href="m9model.php" <?php echo $a_class_active_m9; ?> >M9 model</a></li>
+                    <li><a href="s9model.php" <?php echo $a_class_active_s9; ?> >S9 model</a></li>
+                    <li><a href="t9model.php" <?php echo $a_class_active_t9; ?> >T9 model</a></li>
                     <li>
                         <a href="#">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
